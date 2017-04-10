@@ -49,7 +49,7 @@ atom-text-editor.is-focused .selection .region {
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 0.025);
 }
 
 .syntax--comment, .syntax--punctuation.syntax--definition.syntax--comment {
@@ -72,7 +72,19 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .syntax--keyword, .syntax--storage.syntax--type, .syntax--storage.syntax--modifier {
-  color: #8959a8;
+  color: #5e9e98;
+}
+
+.syntax--type.syntax--js {
+  color: #b480c0;
+}
+
+.syntax--keyword + .syntax--keyword {
+  color: #b480c0;
+}
+
+.syntax--parameters > .syntax--other.syntax--readwrite.syntax--js {
+  color: #f58f2d;
 }
 
 .syntax--keyword.syntax--operator, .syntax--constant.syntax--other.syntax--color, .syntax--punctuation, .syntax--meta.syntax--tag, .syntax--punctuation.syntax--definition.syntax--tag, .syntax--punctuation.syntax--separator.syntax--inheritance.syntax--php, .syntax--punctuation.syntax--definition.syntax--tag.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html, .syntax--punctuation.syntax--section.syntax--embedded, .syntax--keyword.syntax--other.syntax--template, .syntax--keyword.syntax--other.syntax--substitution {
