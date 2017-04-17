@@ -19,6 +19,10 @@ atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
+atom-text-editor .gutter .line-number.git-line-modified {
+  border-left: 2px solid #c8e2ea;
+}
+
 atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
@@ -76,7 +80,23 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .syntax--type.syntax--js {
-  color: #b480c0;
+  color: #8959a8;
+}
+
+.syntax--tag.syntax--jsx .syntax--jsx {
+  color: inherit;
+}
+
+.syntax--support.syntax--type.syntax--flowtype {
+  color: #b7bbbf;
+}
+
+.syntax--support.syntax--type.syntax--class.syntax--flowtype {
+  color: #8cbcc1;
+}
+
+.syntax--JSXNested {
+  color: #9399a2;
 }
 
 .syntax--keyword + .syntax--keyword {
@@ -85,6 +105,14 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .syntax--parameters > .syntax--other.syntax--readwrite.syntax--js {
   color: #f58f2d;
+}
+
+.syntax--function.syntax--arrow.syntax--js > .syntax--keyword.syntax--operator.syntax--assignment.syntax--js + .syntax--variable {
+  color: #f58f2d;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted #55a09b;
 }
 
 .syntax--keyword.syntax--operator, .syntax--constant.syntax--other.syntax--color, .syntax--punctuation, .syntax--meta.syntax--tag, .syntax--punctuation.syntax--definition.syntax--tag, .syntax--punctuation.syntax--separator.syntax--inheritance.syntax--php, .syntax--punctuation.syntax--definition.syntax--tag.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html, .syntax--punctuation.syntax--section.syntax--embedded, .syntax--keyword.syntax--other.syntax--template, .syntax--keyword.syntax--other.syntax--substitution {
